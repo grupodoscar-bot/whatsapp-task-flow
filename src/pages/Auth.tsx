@@ -76,7 +76,7 @@ export default function Auth() {
               <MessageSquare className="h-8 w-8 text-primary-foreground" />
             </div>
           </div>
-          <h1 className="text-3xl font-bold">TaskFlow</h1>
+          <h1 className="text-3xl font-bold">tareas.net</h1>
           <p className="mt-2 text-muted-foreground">
             Gestión de tareas desde WhatsApp
           </p>
