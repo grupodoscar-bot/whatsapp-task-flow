@@ -40,7 +40,7 @@ export function Layout({ children }: LayoutProps) {
             <SidebarTrigger className="-ml-2" />
             
             <div className="flex flex-1 items-center justify-between">
-              <h1 className="text-xl font-semibold text-foreground">TaskFlow</h1>
+              <h1 className="text-xl font-semibold text-foreground">tareas.net</h1>
               
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
