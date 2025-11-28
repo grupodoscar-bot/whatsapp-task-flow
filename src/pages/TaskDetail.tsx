@@ -677,14 +677,14 @@ export default function TaskDetail() {
                   <div>
                     <label className="mb-1 block text-sm font-medium">Responsable</label>
                     <Select
-                      value={task.responsible?.id || ''}
-                      onValueChange={(value) => updateTaskField('responsible_id', value || null)}
+                      value={task.responsible?.id || 'unassigned'}
+                      onValueChange={(value) => updateTaskField('responsible_id', value === 'unassigned' ? null : value)}
                     >
                       <SelectTrigger>
                         <SelectValue placeholder="Sin asignar" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="">Sin asignar</SelectItem>
+                        <SelectItem value="unassigned">Sin asignar</SelectItem>
                         {users.map((user) => (
                           <SelectItem key={user.id} value={user.id}>
                             {user.full_name}
